@@ -39,7 +39,8 @@ let model;
 async function loadTruncatedMobileNet() {
   const mobilenet = await tf.loadLayersModel(
 //      'https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json');
-    './mobilenetv1/model.json');
+//    './mobilenetv1/model.json');
+    'https://raw.githubusercontent.com/PopGreenTh/tfjs-pacman/master/mobilenetv1/model.json');
 
   // Return a model that outputs an internal activation.
   //const layer = mobilenet.getLayer('conv_pw_13_relu');
